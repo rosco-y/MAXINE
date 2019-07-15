@@ -6,15 +6,9 @@ public class trigger : MonoBehaviour
 {
         // Start is called before the first frame update
         public Animator _ani;
-        void Start()
+
+        private void OnTriggerEnter(Collider other)
         {
-                
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
+                _ani.SetInteger("condition", 2);
         }
 }
